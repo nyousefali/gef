@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | GEF Biogás Brasil UNIDO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/aos.css" />
+</head>
+<body>
+
+    <section class="container">
+
+        <div class="card" id="conteudo">
+            
+                <div class="sidebar" data-aos="fade-right">
+                    <img src="svg/logo_biogas.png" alt="" data-aos="fade-right" data-aos-delay="400">
+                    <img src="svg/logo_unido.png" alt="" data-aos="fade-right" data-aos-delay="800">
+                </div>
+            
+            
+            <div class="content" >
+                <h2 data-aos="fade-left" data-aos-delay="100">Calculadora de conversão de Biogás</h2>
+                <p data-aos="fade-left" data-aos-delay="200">
+                    Preencha o campo abaixo com um valor e selecione o formato 
+                    de saída de conversão:
+                </p>
+
+                <form action="" method="POST" id="controles">
+                    <p class="flex-center">
+                        <input type="text" class="input-text-1" name="valor" value="0" id="entrada" data-aos="fade-left" data-aos-delay="300">
+                        <svg width="30" height="50" viewBox="0 0 30 50" fill="none" xmlns="http://www.w3.org/2000/svg" data-aos="fade-left" data-aos-delay="350">
+                            <path d="M24 18.9979V10.9979C23.9996 10.6472 23.9071 10.3028 23.7315 9.99911C23.556 9.69546 23.3037 9.44331 23 9.26795L16 5.26795C15.696 5.09241 15.3511 5 15 5C14.6489 5 14.304 5.09241 14 5.26795L7 9.26795C6.69626 9.44331 6.44398 9.69546 6.26846 9.99911C6.09294 10.3028 6.00036 10.6472 6 10.9979V18.9979C6.00036 19.3487 6.09294 19.6931 6.26846 19.9968C6.44398 20.3004 6.69626 20.5526 7 20.7279L14 24.7279C14.304 24.9035 14.6489 24.9959 15 24.9959C15.3511 24.9959 15.696 24.9035 16 24.7279L23 20.7279C23.3037 20.5526 23.556 20.3004 23.7315 19.9968C23.9071 19.6931 23.9996 19.3487 24 18.9979Z" stroke="#F7931E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.27002 9.95795L15 15.0079L23.73 9.95795" stroke="#F7931E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 25.078V14.998" stroke="#F7931E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.148 42V35.196H9.1L9.198 36.176H9.24C9.53867 35.8493 9.86067 35.5787 10.206 35.364C10.5607 35.14 10.9433 35.028 11.354 35.028C11.8767 35.028 12.2827 35.1447 12.572 35.378C12.8707 35.602 13.09 35.9193 13.23 36.33C13.5847 35.938 13.9393 35.6253 14.294 35.392C14.658 35.1493 15.05 35.028 15.47 35.028C16.17 35.028 16.688 35.252 17.024 35.7C17.3693 36.148 17.542 36.8107 17.542 37.688V42H16.394V37.842C16.394 37.198 16.2913 36.736 16.086 36.456C15.8807 36.1667 15.5633 36.022 15.134 36.022C14.6207 36.022 14.0513 36.372 13.426 37.072V42H12.278V37.842C12.278 37.198 12.1753 36.736 11.97 36.456C11.7647 36.1667 11.4427 36.022 11.004 36.022C10.4907 36.022 9.92133 36.372 9.296 37.072V42H8.148ZM21.1274 36.638C20.6794 36.638 20.2828 36.54 19.9374 36.344C19.5921 36.1387 19.3121 35.882 19.0974 35.574L19.6994 35.112C19.8674 35.364 20.0681 35.5647 20.3014 35.714C20.5348 35.854 20.7961 35.924 21.0854 35.924C21.3841 35.924 21.6408 35.84 21.8554 35.672C22.0701 35.504 22.1774 35.2613 22.1774 34.944C22.1774 34.6267 22.0281 34.3887 21.7294 34.23C21.4308 34.062 21.0154 33.978 20.4834 33.978V33.404C20.9594 33.404 21.3234 33.3107 21.5754 33.124C21.8368 32.9373 21.9674 32.704 21.9674 32.424C21.9674 32.1627 21.8741 31.9527 21.6874 31.794C21.5101 31.6353 21.2721 31.556 20.9734 31.556C20.7681 31.556 20.5721 31.6213 20.3854 31.752C20.1988 31.8733 20.0261 32.0273 19.8674 32.214L19.3214 31.738C19.5641 31.4673 19.8254 31.2527 20.1054 31.094C20.3948 30.926 20.7308 30.842 21.1134 30.842C21.3468 30.842 21.5661 30.8747 21.7714 30.94C21.9861 31.0053 22.1728 31.1033 22.3314 31.234C22.4901 31.3553 22.6161 31.5093 22.7094 31.696C22.8028 31.8733 22.8494 32.0787 22.8494 32.312C22.8494 32.6387 22.7608 32.914 22.5834 33.138C22.4061 33.3527 22.1774 33.5253 21.8974 33.656C22.2054 33.7307 22.4761 33.8847 22.7094 34.118C22.9521 34.342 23.0734 34.636 23.0734 35C23.0734 35.252 23.0221 35.4807 22.9194 35.686C22.8168 35.882 22.6768 36.0547 22.4994 36.204C22.3221 36.344 22.1121 36.4513 21.8694 36.526C21.6361 36.6007 21.3888 36.638 21.1274 36.638Z" fill="#808080"/>
+                        </svg>  
+                            
+                    </p>
+                    <!--<input type="text" class="input-text-1" name="valor" value="0" id="entrada"> -->
+
+                    <div class="card-icons">
+                        <div class="card-icon-item" data-aos="fade-left" data-aos-delay="400">
+                            <!--<div class="icon">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.995 5L20.655 10.66C21.7743 11.7786 22.5368 13.2041 22.8459 14.7561C23.155 16.308 22.9969 17.9168 22.3915 19.379C21.7862 20.8411 20.7608 22.0908 19.4451 22.9701C18.1294 23.8494 16.5825 24.3187 15 24.3187C13.4175 24.3187 11.8706 23.8494 10.5549 22.9701C9.23919 22.0908 8.21381 20.8411 7.60847 19.379C7.00312 17.9168 6.845 16.308 7.15411 14.7561C7.46321 13.2041 8.22566 11.7786 9.345 10.66L14.995 5Z" stroke="#F7931E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div> -->
+                                <input type="radio" name="format" id="radio1" value="0.69" >
+                                <label for="radio1" class="icon" >
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.995 5L20.655 10.66C21.7743 11.7786 22.5368 13.2041 22.8459 14.7561C23.155 16.308 22.9969 17.9168 22.3915 19.379C21.7862 20.8411 20.7608 22.0908 19.4451 22.9701C18.1294 23.8494 16.5825 24.3187 15 24.3187C13.4175 24.3187 11.8706 23.8494 10.5549 22.9701C9.23919 22.0908 8.21381 20.8411 7.60847 19.379C7.00312 17.9168 6.845 16.308 7.15411 14.7561C7.46321 13.2041 8.22566 11.7786 9.345 10.66L14.995 5Z" stroke="#F7931E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
+                                <label for="radio1"></label><h5>Diesel</h5></label>
+                                <label for="radio1"><h6>L (litros)</h6></label>
+                            
+                            
+                        </div>
+    
+                        <div class="card-icon-item" data-aos="fade-left" data-aos-delay="500">
+                                <input type="radio" name="format" id="radio2" value="0.53">
+                                <label for="radio2" class="icon" >
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.73 10.73C21.0208 10.4399 21.3787 10.2259 21.7719 10.107C22.1652 9.98809 22.5816 9.96792 22.9845 10.0483C23.3874 10.1286 23.7642 10.307 24.0817 10.5677C24.3993 10.8283 24.6477 11.1632 24.805 11.5427C24.9623 11.9222 25.0236 12.3346 24.9836 12.7434C24.9436 13.1523 24.8035 13.545 24.5756 13.8868C24.3477 14.2286 24.0391 14.509 23.6771 14.7031C23.3151 14.8973 22.9108 14.9992 22.5 15H5M12.59 7.58998C12.8223 7.3563 13.1088 7.18363 13.4239 7.08732C13.739 6.99102 14.073 6.97407 14.3963 7.03797C14.7195 7.10188 15.022 7.24466 15.2768 7.45363C15.5315 7.66259 15.7307 7.93127 15.8566 8.23578C15.9825 8.54028 16.0313 8.87117 15.9985 9.19905C15.9657 9.52692 15.8524 9.84161 15.6687 10.1151C15.4849 10.3887 15.2365 10.6126 14.9454 10.7669C14.6542 10.9213 14.3295 11.0014 14 11H5L12.59 7.58998ZM15.59 22.41C15.8223 22.6437 16.1088 22.8163 16.4239 22.9126C16.739 23.0089 17.073 23.0259 17.3963 22.962C17.7195 22.8981 18.022 22.7553 18.2768 22.5463C18.5315 22.3374 18.7307 22.0687 18.8566 21.7642C18.9825 21.4597 19.0313 21.1288 18.9985 20.8009C18.9657 20.473 18.8524 20.1584 18.6687 19.8848C18.4849 19.6113 18.2365 19.3874 17.9454 19.233C17.6542 19.0786 17.3295 18.9986 17 19H5L15.59 22.41Z" stroke="#F7931E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
+                                <label for="radio2"><h5>GLP</h5></label>
+                                <label for="radio2"><h6>Kg (quilos)</h6></label>
+                            
+                            
+                        </div>
+    
+                        <div class="card-icon-item" data-aos="fade-left" data-aos-delay="600">
+                                <input type="radio" name="format" id="radio3" value="2.07" >
+                                <label for="radio3" class="icon">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 5L6 17H15L14 25L24 13H15L16 5Z" stroke="#F7931E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
+                                <label for="radio3"><h5>Energia elétrica</h5></label>
+                                <label for="radio3"><h6>KWh (energia/tempo)</h6></label>
+                            
+                        </div>
+                    </div>
+
+                    <p data-aos="fade-left" data-aos-delay="700">
+                        É equivalente a:
+                    </p>
+                    <input type="text" class="input-text-2" readonly name="valor" value="0" id="resultado" data-aos="fade-left" data-aos-delay="800">
+
+                </form>
+                
+                <a href="index.html" class="btn" style="margin-top: 50px;" data-aos="fade-left" data-aos-delay="200">Voltar ao tutorial</a>
+                <p style="height: 100px;"></p>
+            </div>
+            
+
+        </div>
+    </section>
+    
+    <script src="js/script.js"></script>
+
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-in-out-sine",
+        duration: 800,
+      });
+    </script>
+</body>
+</html>

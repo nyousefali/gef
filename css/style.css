@@ -113,8 +113,8 @@ button:hover {
 
 #primeira_secao {
   opacity: 0;
-  -webkit-animation: primeira_secao 10s ease;
-          animation: primeira_secao 10s ease;
+  -webkit-animation: primeira_secao 15s ease;
+          animation: primeira_secao 15s ease;
 }
 
 @-webkit-keyframes primeira_secao {
@@ -143,8 +143,8 @@ button:hover {
 
 #segunda_secao {
   opacity: 0;
-  -webkit-animation: segunda_secao 10s ease;
-          animation: segunda_secao 10s ease;
+  -webkit-animation: segunda_secao 15s ease;
+          animation: segunda_secao 15s ease;
 }
 
 @-webkit-keyframes segunda_secao {
@@ -173,8 +173,8 @@ button:hover {
 
 #terceira_secao {
   opacity: 0;
-  -webkit-animation: terceira_secao 10s ease;
-          animation: terceira_secao 10s ease;
+  -webkit-animation: terceira_secao 15s ease;
+          animation: terceira_secao 15s ease;
 }
 
 @-webkit-keyframes terceira_secao {
@@ -203,19 +203,16 @@ button:hover {
 
 #quarta_secao {
   opacity: 0;
-  -webkit-animation: quarta_secao 10s ease;
-          animation: quarta_secao 10s ease;
+  -webkit-animation: quarta_secao 15s ease forwards;
+          animation: quarta_secao 15s ease forwards;
 }
 
 @-webkit-keyframes quarta_secao {
   0%, 70% {
     opacity: 0;
   }
-  75%, 95% {
+  75%, 100% {
     opacity: 1;
-  }
-  95%, 100% {
-    opacity: 0;
   }
 }
 
@@ -223,11 +220,23 @@ button:hover {
   0%, 70% {
     opacity: 0;
   }
-  75%, 95% {
+  75%, 100% {
     opacity: 1;
   }
-  95%, 100% {
+}
+
+#btn_abertura {
+  opacity: 0;
+  -webkit-animation: quarta_secao 15s ease forwards;
+          animation: quarta_secao 15s ease forwards;
+}
+
+@keyframes quarta_secao {
+  0%, 70% {
     opacity: 0;
+  }
+  75%, 100% {
+    opacity: 1;
   }
 }
 
@@ -254,6 +263,20 @@ body {
   background-color: #FAF8F5;
 }
 
+.container {
+  max-width: 980px;
+  padding: 20px 50px 200px 50px;
+  margin: 0 auto;
+  background-color: white-1;
+}
+
+@media screen and (max-width: 780px) {
+  .container {
+    height: 1200px;
+    padding: 150px 30px 0px 30px;
+  }
+}
+
 .abertura {
   width: 100%;
   height: 100vh;
@@ -271,14 +294,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.container {
-  max-width: 980px;
-  margin: 50px auto;
-  padding: 50px;
-  border: 1px solid red;
-  background-color: white-1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .btn {
@@ -291,6 +310,13 @@ body {
   text-align: center;
   margin: 10px 0px;
   background: linear-gradient(225deg, #F2AD1A, #F7931E);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .card {
@@ -314,7 +340,7 @@ body {
 }
 
 .sidebar {
-  height: 720px;
+  height: 740px;
   width: 370px;
   border-radius: 20px;
   -webkit-box-flex: 1;
@@ -341,8 +367,7 @@ body {
 
 @media screen and (max-width: 780px) {
   .sidebar {
-    height: 100%;
-    padding: 30px 20px;
+    height: 300px;
   }
 }
 

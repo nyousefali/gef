@@ -1,6 +1,6 @@
 #primeira_secao{
     opacity: 0;
-    animation: primeira_secao 10s ease;
+    animation: primeira_secao 15s ease;
 }
 
 @keyframes primeira_secao{
@@ -18,7 +18,7 @@
 
 #segunda_secao{
     opacity: 0;
-    animation: segunda_secao 10s ease;
+    animation: segunda_secao 15s ease;
 }
 
 @keyframes segunda_secao{
@@ -35,7 +35,7 @@
 
 #terceira_secao{
     opacity: 0;
-    animation: terceira_secao 10s ease;
+    animation: terceira_secao 15s ease;
 }
 
 @keyframes terceira_secao{
@@ -52,17 +52,30 @@
 
 #quarta_secao{
     opacity: 0;
-    animation: quarta_secao 10s ease;
+    animation: quarta_secao 15s ease forwards;
 }
 
 @keyframes quarta_secao{
     0%,70%{
         opacity: 0;
     }
-    75%,95%{
+    75%,100%{
         opacity: 1;
     }
-    95%,100%{
+
+}
+
+#btn_abertura{
+    opacity: 0;
+    animation: quarta_secao 15s ease forwards;
+}
+
+@keyframes quarta_secao{
+    0%,70%{
         opacity: 0;
     }
+    75%,100%{
+        opacity: 1;
+    }
+
 }
