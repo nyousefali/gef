@@ -1,0 +1,66 @@
+.input-text-1{
+    height: 60px;
+    width: 100%;
+
+    padding: 5px 10px;
+    margin-right: 20px;
+    color: $black-3;
+    border: 1px solid $gray-12;
+    border-radius: 5px;
+    text-align: center;
+
+    font-size: 36px;
+
+    &:focus{
+        border: 1px solid red;
+    }
+
+    &:checked{
+        border: 1px solid red;
+    }
+}
+
+.input-text-2{
+    height: 60px;
+    width: 100%;
+
+    padding: 5px 10px;
+    color: $white-1;
+    border: 0;
+
+    background: linear-gradient(225deg, $orange-2, $orange-1);
+    border-radius: 5px;
+    text-align: center;
+
+    font-size: 36px;
+
+    position: relative;
+
+    &:after{
+        content: '';
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+
+        width: 100px;
+        height: 100px;
+        z-index: 2;
+        background-color: red;
+        color: $white-1;
+    }
+
+    &:checked{
+        border: 1px solid red;
+    }
+}
+
+
+button{
+    border: 0;
+
+    transition: .3s ease;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.2);
+    }
+}

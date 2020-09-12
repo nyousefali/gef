@@ -1,8 +1,242 @@
+h2 {
+  font-size: 48px;
+  line-height: 110%;
+  color: #21201F;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+h2:after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 80px;
+  height: 10px;
+  background: linear-gradient(225deg, #F2AD1A, #F7931E);
+  border-radius: 3px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #30302F;
+}
+
+h6 {
+  font-weight: normal;
+  font-size: 12px;
+  color: #a0a0a0;
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+p {
+  font-size: 16px;
+  line-height: 140%;
+  color: #30302F;
+  margin: 10px 0px;
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.input-text-1 {
+  height: 60px;
+  width: 100%;
+  padding: 5px 10px;
+  margin-right: 20px;
+  color: #30302F;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 36px;
+}
+
+.input-text-1:focus {
+  border: 1px solid red;
+}
+
+.input-text-1:checked {
+  border: 1px solid red;
+}
+
+.input-text-2 {
+  height: 60px;
+  width: 100%;
+  padding: 5px 10px;
+  color: #FAF8F5;
+  border: 0;
+  background: linear-gradient(225deg, #F2AD1A, #F7931E);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 36px;
+  position: relative;
+}
+
+.input-text-2:after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  background-color: red;
+  color: #FAF8F5;
+}
+
+.input-text-2:checked {
+  border: 1px solid red;
+}
+
+button {
+  border: 0;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#primeira_secao {
+  opacity: 0;
+  -webkit-animation: primeira_secao 10s ease;
+          animation: primeira_secao 10s ease;
+}
+
+@-webkit-keyframes primeira_secao {
+  0% {
+    opacity: 0;
+  }
+  5%, 20% {
+    opacity: 1;
+  }
+  25%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes primeira_secao {
+  0% {
+    opacity: 0;
+  }
+  5%, 20% {
+    opacity: 1;
+  }
+  25%, 100% {
+    opacity: 0;
+  }
+}
+
+#segunda_secao {
+  opacity: 0;
+  -webkit-animation: segunda_secao 10s ease;
+          animation: segunda_secao 10s ease;
+}
+
+@-webkit-keyframes segunda_secao {
+  0%, 25% {
+    opacity: 0;
+  }
+  30%, 45% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes segunda_secao {
+  0%, 25% {
+    opacity: 0;
+  }
+  30%, 45% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+#terceira_secao {
+  opacity: 0;
+  -webkit-animation: terceira_secao 10s ease;
+          animation: terceira_secao 10s ease;
+}
+
+@-webkit-keyframes terceira_secao {
+  0%, 50% {
+    opacity: 0;
+  }
+  55%, 70% {
+    opacity: 1;
+  }
+  75%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes terceira_secao {
+  0%, 50% {
+    opacity: 0;
+  }
+  55%, 70% {
+    opacity: 1;
+  }
+  75%, 100% {
+    opacity: 0;
+  }
+}
+
+#quarta_secao {
+  opacity: 0;
+  -webkit-animation: quarta_secao 10s ease;
+          animation: quarta_secao 10s ease;
+}
+
+@-webkit-keyframes quarta_secao {
+  0%, 70% {
+    opacity: 0;
+  }
+  75%, 95% {
+    opacity: 1;
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes quarta_secao {
+  0%, 70% {
+    opacity: 0;
+  }
+  75%, 95% {
+    opacity: 1;
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Mukta', sans-serif;
 }
 
 body {
@@ -17,13 +251,198 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #F7F5F2;
+  background-color: #FAF8F5;
+}
+
+.abertura {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: #FAF8F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container {
   max-width: 980px;
-  min-height: 720px;
+  margin: 50px auto;
+  padding: 50px;
+  border: 1px solid red;
+  background-color: white-1;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  padding: 10px 30px !important;
+  color: #FAF8F5;
+  font-weight: 500;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px 0px;
+  background: linear-gradient(225deg, #F2AD1A, #F7931E);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background: #F7F5F2;
+  -webkit-box-shadow: 0px 0px 50px -10px rgba(252, 189, 56, 0.5);
+          box-shadow: 0px 0px 50px -10px rgba(252, 189, 56, 0.5);
   border-radius: 20px;
-  background-color: #F7931E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sidebar {
+  height: 720px;
+  width: 370px;
+  border-radius: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
+  padding: 30px 20px;
+  background: linear-gradient(225deg, #F2AD1A, #F7931E);
+  -webkit-box-shadow: 0px 10px 30px -10px rgba(252, 189, 56, 0.9);
+          box-shadow: 0px 10px 30px -10px rgba(252, 189, 56, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 780px) {
+  .sidebar {
+    height: 100%;
+    padding: 30px 20px;
+  }
+}
+
+.content {
+  padding: 30px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 300px;
+          flex: 2 1 300px;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/**/
+.card-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0px;
+}
+
+.card-icon-item {
+  min-width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.card-icon-item input[type=radio] {
+  display: none;
+}
+
+.card-icon-item input:checked + label {
+  background: #F7931E;
+}
+
+.card-icon-item input:checked + label svg path {
+  stroke: #FAF8F5;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  background: #FAF8F5;
+  -webkit-box-shadow: 0px 0px 20px -5px rgba(252, 186, 58, 0.8);
+          box-shadow: 0px 0px 20px -5px rgba(252, 186, 58, 0.8);
+  border-radius: 10px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.icon:hover {
+  background: #F7931E;
+}
+
+.icon:hover svg path {
+  stroke: #FAF8F5;
+}
+
+.icon.icon-active {
+  background: #F7931E;
+}
+
+.icon.icon-active svg path {
+  stroke: #FAF8F5;
 }
 /*# sourceMappingURL=style.css.map */

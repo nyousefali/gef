@@ -1,0 +1,68 @@
+#primeira_secao{
+    opacity: 0;
+    animation: primeira_secao 10s ease;
+}
+
+@keyframes primeira_secao{
+    0%{
+        opacity: 0;
+    }
+    5%,20%{
+        opacity: 1;
+    }
+    25%,100%{
+        opacity: 0;
+    }
+}
+
+
+#segunda_secao{
+    opacity: 0;
+    animation: segunda_secao 10s ease;
+}
+
+@keyframes segunda_secao{
+    0%,25%{
+        opacity: 0;
+    }
+    30%,45%{
+        opacity: 1;
+    }
+    50%,100%{
+        opacity: 0;
+    }
+}
+
+#terceira_secao{
+    opacity: 0;
+    animation: terceira_secao 10s ease;
+}
+
+@keyframes terceira_secao{
+    0%,50%{
+        opacity: 0;
+    }
+    55%,70%{
+        opacity: 1;
+    }
+    75%,100%{
+        opacity: 0;
+    }
+}
+
+#quarta_secao{
+    opacity: 0;
+    animation: quarta_secao 10s ease;
+}
+
+@keyframes quarta_secao{
+    0%,70%{
+        opacity: 0;
+    }
+    75%,95%{
+        opacity: 1;
+    }
+    95%,100%{
+        opacity: 0;
+    }
+}

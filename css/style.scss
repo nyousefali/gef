@@ -1,9 +1,22 @@
 @import './colors';
 
+@mixin Mukta(){
+    font-family: 'Mukta', sans-serif;
+}
+
+@mixin SansPro(){
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+@import './texts';
+@import './forms';
+@import './animations';
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    @include Mukta();
 }
 
 body{
@@ -17,11 +30,160 @@ body{
     background-color: $white-1;
 }
 
+.abertura{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+    background-color: $white-1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container{
     max-width: 980px;
-    min-height: 720px;
+
+    margin: 50px auto;
+    padding: 50px;
+    border: 1px solid red;
+
+    background-color: white-1;
+}
+
+
+.btn{
+    display: block;
+    text-decoration: none;
+
+    padding: 10px 30px !important;
+    color: $white-1;
+    font-weight: 500;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    margin: 10px 0px;
+
+    background: linear-gradient(225deg, $orange-2, $orange-1);
+
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+
+    background: #F7F5F2;
+    box-shadow: 0px 0px 50px -10px rgba(252, 189, 56, 0.5);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sidebar{
+    height: 720px;
+    width: 370px;
 
     border-radius: 20px;
 
-    background-color: $orange-1;
+    flex: 1 1 200px;
+    padding: 30px 20px;
+
+    background: linear-gradient(225deg, $orange-2, $orange-1);
+
+    box-shadow: 0px 10px 30px -10px rgba(252, 189, 56, 0.9);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+@media screen and (max-width: 780px){
+    .sidebar{
+        height: 100%;
+        padding: 30px 20px;
+    }
+    
+}
+
+.content{
+    padding: 30px;
+
+    flex: 2 1 300px;
+
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**/
+
+.card-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.card-icon-item{
+
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+    input[type=radio]{
+        display: none;
+    }
+
+    input:checked + label{
+        background: $orange-1;
+        svg path{
+            stroke: $white-1;
+        }
+    }
+}
+
+.icon{
+    width: 70px;
+    height: 70px;
+    background: $white-1;
+    box-shadow: 0px 0px 20px -5px rgba(252, 186, 58, 0.8);
+    border-radius: 10px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .5s ease;
+
+    &:hover{
+        background: $orange-1;
+        svg path{
+            stroke: $white-1;
+        }
+    }
+}
+
+.icon.icon-active{
+    background: $orange-1;
+    svg path{
+        stroke: $white-1;
+    }
+}
+
